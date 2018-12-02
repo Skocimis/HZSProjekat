@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        #listaTimova {
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <a href="pocetna.html" id = "backDugme"><-</a>
+    <div class="container">
+        <form id="forma" action="#" method="post" class="form-horizontal">
+            <h2>Informacije o timu:</h2>
+            <div class="opsteInformacije">
+                <div class="form-group">
+                    <label for="opisTima">Opis tima</label>
+                    <input class="form-control" type="text" name="description" id="description"></input>
+                </div>
+                <div class="form-group">
+                    <label for="imeTima">Ime tima</label>
+                    <input class="form-control" type="text" name="name" id="name" />
+                </div>
+                <div class="form-group">
+                    <label for="slikaTima">Link ka slici tima</label>
+                    <input class="form-control" type="text" name="photo_url" id="photo_url" />
+                </div>
+            </div>
+
+
+            <div class="team_membersrow">
+
+                <div class="clanTima col-md-4">
+                    <h3>Prvi clan</h3>
+                    <div class="form-group">
+                        <label for="ime">Grad</label>
+                        <input class="form-control" type="text" name="city" id="city1" />
+                    </div>
+                    <div class="form-group">
+                        <label for="prezime">Email</label>
+                        <input class="form-control" type="text" name="email" id="email1" />
+                    </div>
+                    <div class="form-group">
+                        <label for="ime">Ime</label>
+                        <input class="form-control" type="text" name="first_name" id="first_name1" />
+                    </div>
+                    <div class="form-group">
+                        <label for="prezime">Prezime</label>
+                        <input class="form-control" type="text" name="last_name" id="last_name1" />
+                    </div>
+                    <div class="form-group">
+                        <label for="ime">Broj telefona</label>
+                        <input class="form-control" type="text" name="phone_number" id="phone_number1" />
+                    </div>
+                    <div class="form-group">
+                        <label for="prezime">Škola</label>
+                        <input class="form-control" type="text" name="school" id="school1" />
+                    </div>
+                </div>
+
+
+                <div class="clanTima col-md-4">
+                    <h3>Drugi clan</h3>
+                    <div class="form-group">
+                        <label for="ime">Grad</label>
+                        <input class="form-control" type="text" name="city" id="city2" />
+                    </div>
+                    <div class="form-group">
+                        <label for="prezime">Email</label>
+                        <input class="form-control" type="text" name="email" id="email2" />
+                    </div>
+                    <div class="form-group">
+                        <label for="ime">Ime</label>
+                        <input class="form-control" type="text" name="first_name" id="first_name2" />
+                    </div>
+                    <div class="form-group">
+                        <label for="prezime">Prezime</label>
+                        <input class="form-control" type="text" name="last_name" id="last_name2" />
+                    </div>
+                    <div class="form-group">
+                        <label for="ime">Broj telefona</label>
+                        <input class="form-control" type="text" name="phone_number" id="phone_number2" />
+                    </div>
+                    <div class="form-group">
+                        <label for="prezime">Škola</label>
+                        <input class="form-control" type="text" name="school" id="school2" />
+                    </div>
+                </div>
+
+
+                <div class="clanTima col-md-4">
+                    <h3>Treci clan</h3>
+                    <div class="form-group">
+                        <label for="ime">Grad</label>
+                        <input class="form-control" type="text" name="city" id="city3" />
+                    </div>
+                    <div class="form-group">
+                        <label for="prezime">Email</label>
+                        <input class="form-control" type="text" name="email" id="email3" />
+                    </div>
+                    <div class="form-group">
+                        <label for="ime">Ime</label>
+                        <input class="form-control" type="text" name="first_name" id="first_name3" />
+                    </div>
+                    <div class="form-group">
+                        <label for="prezime">Prezime</label>
+                        <input class="form-control" type="text" name="last_name" id="last_name3" />
+                    </div>
+                    <div class="form-group">
+                        <label for="ime">Broj telefona</label>
+                        <input class="form-control" type="text" name="phone_number" id="phone_number3" />
+                    </div>
+                    <div class="form-group">
+                        <label for="prezime">Škola</label>
+                        <input class="form-control" type="text" name="school" id="school3" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <input type="submit" value="Send" class="btn btn-secondary btn-lg btn-block" />
+            </div>
+        </form>
+        <p id="output"></p>
+
+
+        <form id="novaForma" action="#">
+            <div class="text-center">
+                <a href="listaTimova.html" id="listaTimova" class="btn btn-secondary btn-lg btn-block">Lista timova</a>
+            </div>
+        </form>
+    </div>
+    <script src="js/forma.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

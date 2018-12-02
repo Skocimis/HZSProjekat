@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Our superheroes</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Ultra" rel="stylesheet">
+  <link rel="stylesheet" href="jsonStil.css">
+</head>
+
+<body>
+
+  <header>
+
+  </header>
+
+  <section>
+
+  </section>
+
+  <script>
+    var header = document.querySelector('header');
+    var section = document.querySelector('section');
+
+    var requestURL = "https://hzsradionice.github.io/prviTest/probniJson/probniPodaci.json";
+    var request = new XMLHttpRequest();
+
+    request.open('GET', requestURL);
+    request.responseType = 'text';
+    request.send();
+
+    request.onload = function () {
+      var tim = JSON.parse(request.response);
+      populateHeader(tim);
+      showHeroes(tim);
+    }
+
+    function populateHeader(jsonObj) {
+      var myH1 = document.createElement('h1');
+      myH1.textContent = jsonObj['imeTima'];
+      header.appendChild(myH1);
+
+      var myPara = document.createElement('p');
+      myPara.textContent = 'Opis tima: ' + jsonObj['opisTima'];
+      header.appendChild(myPara);
+    }
+
+    function showHeroes(jsonObj) {
+      var clanovi = jsonObj['clanovi'];
+
+      for (var i = 0; i < clanovi.length; i++) {
+        var myArticle = document.createElement('article');
+        var ime = document.createElement('h2');
+        var prezime = document.createElement('h2');
+        var email = document.createElement('p');
+        var brojTelefona = document.createElement('p');
+        var skola = document.createElement('p');
+        var mestoSkole = document.createElement('p');
+
+        ime.textContent = 'Ime: ' + clanovi[i].ime;
+        prezime.textContent = 'Prezime: ' + clanovi[i].prezime;
+        email.textContent = "Email: " + clanovi[i].email;
+        brojTelefona.textContent = 'Broj telefona: ' + clanovi[i].brojTelefona;
+        skola.textContent = 'Age: ' + clanovi[i].skola;
+        mestoSkole.textContent = 'Mesto skole: ' + clanovi[i].mestoSkole;
+
+        myArticle.appendChild(ime);
+        myArticle.appendChild(prezime);
+        myArticle.appendChild(email);
+        myArticle.appendChild(brojTelefona);
+        myArticle.appendChild(skola);
+        myArticle.appendChild(mestoSkole);
+
+        section.appendChild(myArticle);
+      }
+    }
+
+
+  </script>
+</body>
+
+</html>

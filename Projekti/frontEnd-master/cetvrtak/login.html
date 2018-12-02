@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <a href="pocetna.html" id = "backDugme"><-</a>
+    <form id="forma">
+    <label>Unesi sifru svog tima</label>
+    <input type="text" id="sifraTima">
+    <input type="submit" value="send">
+
+    <br><br><br>
+    <div id="prikaz">
+
+    </div>
+</form>
+    <script src="js/login.js"></script>
+    <button id = "dug2" onclick="obrisiTim(document.getElementById('sifraTima').value);">Obrisi tim</button>
+</body>
+</html>

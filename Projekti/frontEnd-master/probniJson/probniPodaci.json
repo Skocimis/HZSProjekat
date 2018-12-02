@@ -1,0 +1,31 @@
+{
+  "imeTima" : "Prvi probni tim",
+  "opisTima" : "Potencijalni pobednici Hakatona za srednjoskolce",
+  "slikaTima" : "https://teamsdemo.office.com/img/closing-image.png",
+  "clanovi" : [
+    {
+      "ime" : "Ana",
+      "prezime" : "Anic",
+      "email" : "ana.anic123@gmail.com",
+      "brojTelefona" : "123/456",
+      "skola" : "Prva beogradska gimnazija",
+      "mestoSkole": "Beograd"
+    },
+    {
+      "ime" : "Pera",
+      "prezime" : "Peric",
+      "email" : "pera.peric123@gmail.com",
+      "brojTelefona" : "234/567",
+      "skola" : "Druga niska gimnazija",
+      "mestoSkole": "Nis"
+    },
+    {
+      "ime" : "Sara",
+      "prezime" : "Saric",
+      "email" : "sara.saric123@gmail.com",
+      "brojTelefona" : "345/678",
+      "skola" : "Treca novosadska gimnazija",
+      "mestoSkole": "Novi Sad"
+    }
+  ]
+}

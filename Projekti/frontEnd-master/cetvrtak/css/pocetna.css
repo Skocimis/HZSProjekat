@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/sl.png);
+    background-size: cover;
+    background-color: #1d1d1d;
+    background-repeat: no-repeat;
+}
+.btn {
+    color: rgb(56,56,56);
+}
+.btn:hover {
+    color: rgb(87, 134, 120);
+}
+#btn1{
+    background:#A8A8A8;
+    margin: 55px;
+    padding: 20px;
+    width: 200px;
+    font-family: "Century Gothic";
+    font-size: 20px;
+}
+
+#btn2{
+    float: right;
+    background:#A8A8A8;
+    margin: 55px;
+    padding: 20px;
+    width: 200px;
+    font-family: "Century Gothic";
+    font-size: 20px;
+}
+
+#btn3{
+    left: 33%;
+    position: absolute;
+    top: 50%;
+    padding: 25px;
+    background:#A8A8A8;
+    width: 33%;
+    font-family: "Century Gothic";
+    font-size: 30px;  
+}
+
+#btn1:hover{
+     transform: translate(1.5rem) scale(1.2);
+ } 
+
+#btn2:hover{
+    transform: translate(-1.5rem) scale(1.2);
+} 
+
+#btn3:hover{
+    transform: scale(1.2);
+} 
